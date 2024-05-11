@@ -1,0 +1,92 @@
+.header-background {
+  backdrop-filter: blur(13px) saturate(100%);
+  -webkit-backdrop-filter: blur(13px) saturate(100%);
+  background-color: rgba(255, 255, 255, 0.51);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.back {
+  color: #5a58e9;
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.back span {
+  color: black;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.career-container {
+  padding-block-start: calc(var(--section-padding) + 60px);
+  margin-inline: auto;
+
+  p {
+    color: black;
+    font-size: clamp(1rem, 0.125rem + 2.8vw, 1.7rem);
+  }
+}
+
+.team-section {
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+/* Animation */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.team-section {
+  animation: slideIn 1.5s ease forwards;
+}
+
+.job-openings ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.job-openings li {
+  margin-bottom: 10px;
+}
+
+.career-contact {
+  text-align: center;
+}
+
+.career-contact p {
+  margin: 10px 0;
+  font-size: clamp(1rem, -0.25rem + 4vw, 2rem);
+  color: #333;
+}
+
+.career-contact i {
+  margin-left: 5px;
+  font-size: 3rem;
+  color: #0077b5;
+}
+
+.career-contact i.ri-mail-send-fill {
+  color: #ff5722;
+}
+
+.career-contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
